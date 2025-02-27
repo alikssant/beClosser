@@ -1,0 +1,279 @@
+/* style.module.css */
+.uploadContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 28rem;
+  margin: 2.5rem auto 0;
+}
+
+.uploadTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3730a3;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.uploadArea {
+  border: 2px dashed #a5b4fc;
+  border-radius: 0.5rem;
+  padding: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dragging {
+  border-color: #4f46e5;
+  background-color: #eef2ff;
+}
+
+.uploadArrow {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4f46e5;
+}
+
+.uploadText {
+  color: #4b5563;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.uploadSubtext {
+  color: #6b7280;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.fileInput {
+  display: none;
+}
+
+.fileInfo {
+  text-align: center;
+}
+
+.fileName {
+  color: #374151;
+  font-weight: 500;
+}
+
+.fileSize {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.uploadButton {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #4f46e5;
+  color: white;
+  border-radius: 0.375rem;
+  transition: background-color 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.uploadButton:hover {
+  background-color: #4338ca;
+}
+
+/* Success Page Styles */
+.successContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 32rem;
+  margin: 2.5rem auto 0;
+}
+
+.successContent {
+  width: 100%;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+}
+
+.successTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #10b981;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.successMessage {
+  color: #4b5563;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.fileDetails {
+  background-color: #f9fafb;
+  border-radius: 0.375rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.detailsTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.75rem;
+}
+
+.detailsItem {
+  margin-bottom: 0.5rem;
+  color: #4b5563;
+}
+
+.detailsLabel {
+  font-weight: 500;
+  color: #374151;
+  margin-right: 0.5rem;
+}
+
+.actionButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.viewDataButton {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #4f46e5;
+  border: 1px solid #4f46e5;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  flex: 1;
+  margin-left: 0.5rem;
+}
+
+.viewDataButton:hover {
+  background-color: white;
+}
+
+.uploadAnotherButton {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #4f46e5;
+  border: 1px solid #4f46e5;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  flex: 1;
+  margin-left: 0.5rem;
+}
+
+.uploadAnotherButton:hover {
+  background-color: #eef2ff;
+}
+
+/* Data View Page Styles */
+.dataViewContainer {
+  width: 100%;
+  max-width: 64rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.dataViewHeader {
+  margin-bottom: 2rem;
+}
+
+.dataViewTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #3730a3;
+  margin-bottom: 0.5rem;
+}
+
+.dataViewSubtitle {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.filename {
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.tableContainer {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableHeader {
+  background-color: #f3f4f6;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.tableCell {
+  padding: 0.75rem 1rem;
+  color: #4b5563;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.evenRow {
+  background-color: white;
+}
+
+.oddRow {
+  background-color: #f9fafb;
+}
+
+.dataActionButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.backButton {
+  padding: 0.5rem 1rem;
+  background-color: #9ca3af;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.backButton:hover {
+  background-color: #6b7280;
+}
